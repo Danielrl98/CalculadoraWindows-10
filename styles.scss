@@ -1,58 +1,63 @@
-body { margin: 0; padding: 0;
+body { margin: 0; padding: 0; box-sizing: border-box; display: flex; justify-content: center; align-items: center;
+/*background-image: url(/windows10.png);*/
+    
     section{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } 
-    .calculadora{
-        position: sticky;
-        width: 320px;
-        height: 500px;
-        background-color: #F3F3F3;
-        border: solid;
-        border-width: 0.01mm;
-        border-color: #707070;
-        text-align: center;
-        max-width: 1200;}
-    .botoes{
-        position: sticky;
-        top: 32.8%;
-        text-align: center;}
-    .res{
-        margin: -1px;
-        font: xx-large 25pt arial;
-        width: 77px;
-        height: 49px;
-        border: none;
-        border-radius: 0;
-        background-color: #f8f8f8;}
-    .resnumero{
-        margin: -1px;
-        font: bold 12pt arial;
-        width: 77px;
-        height: 49px;
-        border: none;
-        border-radius: 0;
-        background-color: #FCFCFC;}
-    table{
-        position: sticky;
-        top: 25.6%;
-        text-align: center;}
-    td{
-        position: relative;
-        font: small 10pt lighter;
-        text-align: center;
-        padding-right: 30px;
-        left: 4%;}
-    input{
-        background-color: #F3F3F3;
-        text-align: right;
-        width: 318px;
-        height: 100px;
-        border: none;
-        position: sticky;
-        top:12%;
-        font: normal 35pt arial;
-    }
+        .calculadora{
+            max-width: 320px;
+            max-height: 500px;
+            width:320px;
+            height: 500px;
+            background-color: #F3F3F3;
+            border: solid;
+            border-width: 0.01mm;
+            border-color: #707070;
+            text-align: center;
+            position: relative;
+            #botaotable{
+                position: sticky;
+                border: none;
+                border-radius: 0;
+                background-color: #F3F3F3;
+                text-align: right;
+            }
+            .botoes{
+                border: none;
+                position: absolute;
+                bottom: 6px;
+                left: 4px;
+                .res{
+                    margin: -1px;
+                    font: xx-large 25pt arial;
+                    width: 77px;
+                    height: 49px;
+                    border: none;
+                    border-radius: 0;
+                    background-color: #f8f8f8;}
+                .resnumero{
+                    margin: -1px;
+                    font: bold 12pt arial;
+                    width: 77px;
+                    height: 49px;
+                    border: none;
+                    border-radius: 0;
+                    background-color: #FCFCFC;}
+                }
+           
+                   
+                
 
-}
+            
+            input{
+                background-color: #F3F3F3;
+                text-align: right;
+                width: 314px;
+                height: 100px;
+                border: none;
+                font: normal 35pt arial;
+            }
+        }
+        
+        
+    } 
+    
+    }

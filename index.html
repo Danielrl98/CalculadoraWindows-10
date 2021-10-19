@@ -6,65 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Calculadora Windows 10</title>
+      
 </head>
 <body>
     
+    <script type="text/javascript" src="comando.js"></script>
     <section>
    <div class="calculadora">
-<div>
-        
+    <div id="botaotable" style="float: right;">
         <button id="botaotable">—</button>
         <button id="botaotable">□</button>
         <button id="botaotable">X</button>
+    </div>
+    <tr>
+        <td>MR</td>
+        <td>MR</td>
+        <td>MR</td>
+        <td>MR</td>
+        <td>MR</td>
+        <td>MR</td>
+    </tr>
+</table>
+
+
+
+    <div style="display: inline-flex;">
     
-</div>
-    
-    </table>
-        <input type="number" value="0"></input>
-        <table>
-            <tr>
-            <td>MR</td>
-            <td>MR</td>
-            <td>MR</td>
-            <td>MR</td>
-            <td>MR</td>
-            <td>MR</td>
-        </tr>
-        </table>
-       <div class="botoes">
-        <button class="res" id="porcento"type="a" onclick="Porcento('%')">%</button>
-        <button  class="res" id="limpatudo"type="a" onclick="LimpaTudo()">CE</button>
-        <button class="res" id="limpa"type="a" onclick="Limpa('')">C</button>
-        <button class="res" id="dividir"type="a" onclick="Dividir('/')">/</button>
+     
+      <a name="resultado" id="resultado" type="number"></a>
+      <input type="text" id="holder" placeholder="0" style="border: none;">
+        
+    </div>
+  
+ <div class="botoes">
+        <button class="res" id="porcento"  onclick="Porcento('%')">%</button>
+        <button  class="res" id="limpatudo"  onclick="LimpaTudo('reset')">CE</button>
+        <button class="res" id="limpa"  onclick="Limpa()">C</button>
+        <button class="res" id="dividir"  onclick="Falso('(')">(</button>
         <div style="font-size: 2pt;"> </div>
-        <button class="res" id="sete"type="a" onclick="Sete('7')">7</button>
-        <button class="res" id="oito"type="a" onclick="Oito('8')">8</button>
-        <button class="res" id="nove"type="a" onclick="Nove('9')">9</button>
-        <button class="res" id="vezes"type="a" onclick="Vezes('*')">/</button>
+        <button class="res" id="sete" onclick="insert('77')">)</button>
+        <button class="res" id="oito"  onclick="insert('8')">8</button>
+        <button class="res" id="nove"  onclick="insert('9')">9</button>
+        <button class="res" id="vezes"  onclick="Dividir('/')">/</button>
         <div style="font-size: 2pt;"> </div>
-        <button class="resnumero" id="sete"type="a" onclick="Sete('7')">7</button>
-        <button class="resnumero" id="oito"type="a" onclick="Oito('8')">8</button>
-        <button class="resnumero" id="nove"type="a" onclick="Nove('9')">9</button>
-        <button class="res" id="vezes"type="a" onclick="Vezes('*')">X</button>
+        <button class="resnumero" id="sete"  onclick="insert('7')">7</button>
+        <button class="resnumero" id="oito"  onclick="insert('8')">8</button>
+        <button class="resnumero" id="nove"  onclick="insert('9')">9</button>
+        <button class="res" id="vezes"  onclick="Vezes('*')">X</button>
         <div style="font-size: 2pt;"> </div>
-        <button class="resnumero" id="quatro"type="a" onclick="Quatro('4')">4</button>
-        <button class="resnumero" id="cinco"type="a" onclick="Cinco('5')">5</button>
-        <button class="resnumero" id="seis"type="a" onclick="Seis('6')">6</button>
-        <button class="res"  id="mais"type="a" onclick="Mais('+')">—</button>
+        <button class="resnumero" id="quatro"  onclick="insert('4')">4</button>
+        <button class="resnumero" id="cinco"  onclick="insert('5')">5</button>
+        <button class="resnumero" id="seis"  onclick="insert('6')">6</button>
+        <button class="res"  id="mais"  onclick="Menos('-')">—</button>
         <div style="font-size: 2pt;"> </div>
-        <button class="resnumero" id="um"type="a" onclick="Um('1')">1</button>
-        <button class="resnumero" id="dois"type="a" onclick="Dois('2')">2</button>
-        <button class="resnumero" id="tres"type="a" onclick="Tres('3')">3</button>
-        <button class="res" id="igual"type="a" onclick="Calcular()">+</button>
+        <button class="resnumero" id="um" type="button" onclick="insert('1')">1</button>
+        <button class="resnumero" id="dois" type="button" onclick="insert('2')">2</button>
+        <button class="resnumero" id="tres" onclick="insert('3')">3</button>
+        <button class="res" id="igual"  onclick="Mais('+')">+</button>
         <div style="font-size: 2pt;"> </div>
-        <button class="resnumero" id="um"type="a" onclick="Um('1')">+/-</button>
-        <button class="resnumero" id="dois"type="a" onclick="Dois('2')">0</button>
-        <button class="resnumero" id="tres"type="a" onclick="Tres('3')">,</button>
-        <button class="resnumero" id="igual"type="a" onclick="Calcular()">=</button>
+        <button class="resnumero" id="um"  onclick="MaisMenos('1')">+/-</button>
+        <button class="resnumero" id="dois"  onclick="Zero('0')">0</button>
+        <button class="resnumero" id="tres"  onclick="Virgula('3')">,</button>
+        <button class="resnumero" id="igual"  onclick="Calcular('=')">=</button>
 
        </div>
-    </div>
+       
+ </div>
 
 </section>
+
 </body>
 </html>

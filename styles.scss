@@ -1,7 +1,26 @@
 body { margin: 0; padding: 0; box-sizing: border-box; display: flex; justify-content: center; align-items: center;
 /*background-image: url(/windows10.png);*/
-    
+.holder{
+    visibility: hidden;
+} 
     section{
+       
+        input{
+            
+            font-size: 35pt;
+            text-align: right;
+            width: 314px;
+            height: 100px;
+            right: 0;
+            border: none;
+            font: normal 35pt arial;
+            background-color: #F3F3F3;
+            position: absolute;
+            
+            }
+        input::placeholder{
+                color:black;
+            }
         .calculadora{
             max-width: 320px;
             max-height: 500px;
@@ -14,11 +33,20 @@ body { margin: 0; padding: 0; box-sizing: border-box; display: flex; justify-con
             text-align: center;
             position: relative;
             #botaotable{
-                position: sticky;
+                position: absolute;
+                margin-right: 0;
+                display: flex;
                 border: none;
                 border-radius: 0;
                 background-color: #F3F3F3;
                 text-align: right;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 17pt;
+                width: 30px;
+                height: 30px;
+                #botaotable:hover{
+                    background: rgba(128, 128, 128, 0.363);
+                }
             }
             .botoes{
                 border: none;
@@ -27,7 +55,7 @@ body { margin: 0; padding: 0; box-sizing: border-box; display: flex; justify-con
                 left: 4px;
                 .res{
                     margin: -1px;
-                    font: xx-large 25pt arial;
+                    cursor: pointer;
                     width: 77px;
                     height: 49px;
                     border: none;
@@ -35,6 +63,7 @@ body { margin: 0; padding: 0; box-sizing: border-box; display: flex; justify-con
                     background-color: #f8f8f8;}
                 .resnumero{
                     margin: -1px;
+                    cursor: pointer;
                     font: bold 12pt arial;
                     width: 77px;
                     height: 49px;
@@ -42,18 +71,18 @@ body { margin: 0; padding: 0; box-sizing: border-box; display: flex; justify-con
                     border-radius: 0;
                     background-color: #FCFCFC;}
                 }
-           
-                   
-                
-
             
-            input{
+            a{
                 background-color: #F3F3F3;
                 text-align: right;
                 width: 314px;
                 height: 100px;
                 border: none;
                 font: normal 35pt arial;
+                position: absolute;
+                right: 0;
+                top:8%
+                
             }
         }
         

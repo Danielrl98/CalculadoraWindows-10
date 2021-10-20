@@ -8,7 +8,7 @@
     <title>Calculadora Windows 10</title>
       
 </head>
-<body>
+<body onload="numeroMaximo()"> 
     
     <script type="text/javascript" src="comando.js"></script>
     <section>
@@ -39,24 +39,24 @@
     </div>
   
  <div class="botoes">
-        <button class="res" id="porcento"  onclick="Porcento('%')">%</button>
-        <button  class="res" id="limpatudo"  onclick="LimpaTudo('reset')">CE</button>
-        <button class="res" id="limpa"  onclick="Limpa()">C</button>
-        <button class="res" id="dividir"  onclick="Falso('(')">(</button>
+        <button class="res" id="porcento" onclick="Porcento('%')">%</button>
+        <button  class="res" id="limpatudo" onclick="LimpaTudo('reset')">CE</button>
+        <button class="res" id="limpa" onclick="Limpa()">C</button>
+        <button class="res" id="dividir" onclick="Falso('(')">(</button>
         <div style="font-size: 2pt;"> </div>
         <button class="res" id="sete" onclick="insert('77')">)</button>
-        <button class="res" id="oito"  onclick="insert('8')">8</button>
-        <button class="res" id="nove"  onclick="insert('9')">9</button>
-        <button class="res" id="vezes"  onclick="Dividir('/')">/</button>
+        <button class="res" id="oito" onclick="insert('8')">8</button>
+        <button class="res" id="nove" onclick="insert('9')">9</button>
+        <button class="res" id="vezes" onclick="Dividir('/')">/</button>
         <div style="font-size: 2pt;"> </div>
-        <button class="resnumero" id="sete"  onclick="insert('7')">7</button>
-        <button class="resnumero" id="oito"  onclick="insert('8')">8</button>
-        <button class="resnumero" id="nove"  onclick="insert('9')">9</button>
-        <button class="res" id="vezes"  onclick="Vezes('*')">X</button>
+        <button class="resnumero" id="sete" onclick="insert('7')">7</button>
+        <button class="resnumero" id="oito" onclick="insert('8')">8</button>
+        <button class="resnumero" id="nove" onclick="insert('9')">9</button>
+        <button class="res" id="vezes" onclick="Vezes('*')">X</button>
         <div style="font-size: 2pt;"> </div>
-        <button class="resnumero" id="quatro"  onclick="insert('4')">4</button>
-        <button class="resnumero" id="cinco"  onclick="insert('5')">5</button>
-        <button class="resnumero" id="seis"  onclick="insert('6')">6</button>
+        <button class="resnumero" id="quatro" onclick="insert('4')">4</button>
+        <button class="resnumero" id="cinco" onclick="insert('5')">5</button>
+        <button class="resnumero" id="seis" onclick="insert('6')">6</button>
         <button class="res"  id="mais"  onclick="Menos('-')">—</button>
         <div style="font-size: 2pt;"> </div>
         <button class="resnumero" id="um" type="button" onclick="insert('1')">1</button>
@@ -64,10 +64,10 @@
         <button class="resnumero" id="tres" onclick="insert('3')">3</button>
         <button class="res" id="igual"  onclick="Mais('+')">+</button>
         <div style="font-size: 2pt;"> </div>
-        <button class="resnumero" id="um"  onclick="MaisMenos('1')">+/-</button>
-        <button class="resnumero" id="dois"  onclick="Zero('0')">0</button>
-        <button class="resnumero" id="tres"  onclick="Virgula('3')">,</button>
-        <button class="resnumero" id="igual"  onclick="Calcular('=')">=</button>
+        <button class="resnumero" id="um" onclick="MaisMenos()">+/-</button>
+        <button class="resnumero" id="dois" onclick="insert('0')">0</button>
+        <button class="resnumero" id="tres" onclick="Ponto('.')">.</button>
+        <button class="resnumero" id="igual" onclick="Calcular('=')">=</button>
 
        </div>
        

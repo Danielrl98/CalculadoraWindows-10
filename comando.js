@@ -15,7 +15,6 @@ document.querySelector("a#resultado").innerHTML = ''
 
 }
 function Limpa() {
-document.querySelector("input#holder").classList.remove("holder")
 var resultado = document.querySelector("a#resultado").innerHTML;
 document.querySelector("a#resultado").innerHTML = resultado.substring(0, resultado.length -1)
 }
@@ -27,9 +26,12 @@ document.querySelector(" a#resultado").innerHTML = numero + total
 
 }
 
-function Falso(total) {
+function Dividir(total) {
     var numero = document.querySelector(" a#resultado").innerHTML;
     document.querySelector(" a#resultado").innerHTML = numero + total
+    if(numero){
+        document.querySelector("a#resultado").innerHTML = eval(numero)+'/'
+     }
 }
 
 function Vezes(total) {
@@ -43,6 +45,9 @@ if(numero){
 function Menos(total) {
 var numero = document.querySelector("a#resultado").innerHTML;
 document.querySelector("a#resultado").innerHTML = numero + total
+if(numero){
+    document.querySelector("a#resultado").innerHTML = eval(numero)+'-'
+ }
 }
 
 function Mais(total) {
@@ -56,12 +61,11 @@ if(numero){
 function MaisMenos(total) {
 var numero = document.querySelector("a#resultado").innerHTML;
 document.querySelector("a#resultado").innerHTML = numero + total
+if(numero){
+   document.querySelector("a#resultado").innerHTML = eval(numero)*-1
+ }
 }
-function Zero(total) {
-var numero = document.querySelector("a#resultado").innerHTML;
-document.querySelector("a#resultado").innerHTML = numero + total
-}
-function Virgula(total) {
+function Ponto(total) {
 var numero = document.querySelector("a#resultado").innerHTML;
 document.querySelector("a#resultado").innerHTML = numero + total
 }
@@ -77,4 +81,6 @@ if(numero){
 }
 
 
+
 }
+

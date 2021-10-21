@@ -1,5 +1,17 @@
 body { margin: 0; padding: 0; box-sizing: border-box; display: flex; justify-content: center; align-items: center;
 /*background-image: url(/windows10.png);*/
+img{
+    width: 18px;
+    height: 11px;
+    justify-content: left;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+strong{
+    font-size: 14pt;
+    font-family: sans-serif;
+}
+
 .holder{
     visibility: hidden;
 } 
@@ -11,6 +23,7 @@ body { margin: 0; padding: 0; box-sizing: border-box; display: flex; justify-con
             text-align: right;
             width: 314px;
             height: 100px;
+            top: 15%;
             right: 0;
             border: none;
             font: normal 35pt arial;
@@ -30,23 +43,9 @@ body { margin: 0; padding: 0; box-sizing: border-box; display: flex; justify-con
             border: solid;
             border-width: 0.01mm;
             border-color: #707070;
-            text-align: center;
+           // text-align: center;
             position: relative;
-            #botaotable{
-                position: absolute;
-                margin-right: 0;
-                display: flex;
-                border: none;
-                border-radius: 0;
-                background-color: #F3F3F3;
-                text-align: right;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 17pt;
-                width: 30px;
-                height: 30px;
-                #botaotable:hover{
-                    background: rgba(128, 128, 128, 0.363);
-                }
+            
             }
             .botoes{
                 border: none;
@@ -81,12 +80,20 @@ body { margin: 0; padding: 0; box-sizing: border-box; display: flex; justify-con
                 font: normal 35pt arial;
                 position: absolute;
                 right: 0;
-                top:8%
+                top:20%;
+                max-width: 12ch;
+                overflow: hidden;
+                text-overflow: clipped overflow;
+                white-space: nowrap;
                 
             }
         }
         
         
     } 
+        td{
+            padding-right: 32px;
+            font: normal 9pt arial;
+
+        }    
     
-    }

@@ -2,11 +2,47 @@ body { margin: 0; padding: 0; box-sizing: border-box; display: flex; justify-con
 /*background-image: url(/windows10.png);*/
 img{
     width: 18px;
+    
     height: 11px;
     justify-content: left;
     margin-left: 4%;
     margin-top: 5%;
 }
+#janela{
+    width: 45px;
+    height: 29.5px;
+    font-size: 13pt;
+    margin: 0;
+    padding:0;
+    border:none;
+    position: relative;
+    right: 60px;
+    
+}
+.janelax{
+    width: 45px;
+    height: 29.5px;
+    font-size: 13pt;
+    margin: 0;
+    padding:0;
+    border:none;
+    position: relative;
+    right: 60px;
+    border-radius: 0;
+    
+}
+.janelax:hover{
+    
+    background-color: red;
+    color:white;
+
+}
+#janela:hover{
+    
+        background-color: #d6dae0;
+    
+}
+
 strong{
     font-size: 14pt;
     font-family: sans-serif;
@@ -29,10 +65,13 @@ strong{
             font: normal 35pt arial;
             background-color: #F3F3F3;
             position: absolute;
-            
+            pointer-events: none;
             }
         input::placeholder{
                 color:black;
+            }
+            input:hover{
+                border: none;
             }
         .calculadora{
             max-width: 320px;
@@ -81,10 +120,13 @@ strong{
                 position: absolute;
                 right: 0;
                 top:20%;
-                max-width: 12ch;
+                max-width: 11ch;
                 overflow: hidden;
                 text-overflow: clipped overflow;
                 white-space: nowrap;
+                
+                
+               
                 
             }
         }

@@ -8,12 +8,12 @@
     <title>Calculadora Windows 10</title>
       
 </head>
-<body> 
+<body onclick="Logar()"> 
     
     <script type="text/javascript" src="comando.js"></script>
     <section>
    <div class="calculadora">
-        <p style="font-size: 7pt;"></p><dan>   Calculadora</dan><janela style="position:relative;left:50%;"><aman>-</aman><aman>-</aman><aman>-</dan><br></janela>
+        <span style="font-size: 7pt;"></span>   Calculadora<janela style="position:relative;left:50%;"><button id="janela">—</button><button id="janela">□</button id="janela"><button class="janelax"id="janelax">X</button><br></janela>
     <img src="menuhamburguer.png" alt="menuhamburguer"><strong>   Padrão</strong></img> 
    
     <div style="display: inline-flex;">
@@ -36,12 +36,12 @@
         <button class="res" id="porcento" onclick="Porcento('%')">%</button>
         <button  class="res" id="limpatudo" onclick="LimpaTudo('reset')">CE</button>
         <button class="res" id="limpa" onclick="Limpa()">C</button>
-        <button class="res" id="dividir" onclick="Falso('(')">(</button>
+        <button class="res" id="dividir" onclick="Limpa()"><=</button>
         <div style="font-size: 2pt;"> </div>
-        <button class="res" id="sete" onclick="insert('77')">)</button>
-        <button class="res" id="oito" onclick="insert('8')">8</button>
-        <button class="res" id="nove" onclick="insert('9')">9</button>
-        <button class="res" id="vezes" onclick="Dividir('/')">/</button>
+        <button class="res" id="sete" onclick="Umpranumero()">¹/x</button>
+        <button class="res" id="oito" onclick="Exponencial()">x²</button>
+        <button class="res" id="nove" onclick="Radical()">²vx</button>
+        <button class="res" id="vezes" onclick="Dividir('/')">÷</button>
         <div style="font-size: 2pt;"> </div>
         <button class="resnumero" id="sete" onclick="insert('7')">7</button>
         <button class="resnumero" id="oito" onclick="insert('8')">8</button>
@@ -58,7 +58,7 @@
         <button class="resnumero" id="tres" onclick="insert('3')">3</button>
         <button class="res" id="igual"  onclick="Mais('+')">+</button>
         <div style="font-size: 2pt;"> </div>
-        <button class="resnumero" id="um" onclick="MaisMenos()">+/-</button>
+        <button class="resnumero" id="um" onclick="MaisMenos()">⁺/-</button>
         <button class="resnumero" id="dois" onclick="insert('0')">0</button>
         <button class="resnumero" id="tres" onclick="Ponto('.')">.</button>
         <button class="resnumero" id="igual" onclick="Calcular('=')">=</button>

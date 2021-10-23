@@ -50,6 +50,9 @@ function Exponencial(total) {
     if(numero){
         document.querySelector("a#resultado").innerHTML = eval(numero)**2
      }
+     if(numero.length == 0){
+        document.querySelector("a#resultado").innerHTML = '0'
+     }
 }
 function Radical(total) {
     var numero = document.querySelector("a#resultado").innerHTML;
@@ -61,10 +64,9 @@ function Radical(total) {
       
                 
 
-    } else if (numero.value.length <= 0){
-       // document.querySelector("a#resultado").innerHTML = eval(numero)
-       window.alert('digite um valor')
-    }
+    } if(numero.length == 0){
+        document.querySelector("a#resultado").innerHTML = '0'
+     }
    
 }
 
@@ -166,8 +168,18 @@ if(numero){
     window.alert('Valor maior que o esperado')
      
  }
- 
+
  })
+ function MenuH() {
+    
+
+    document.querySelector('img').classList.toggle('menuimg')
+    document.querySelector('span').classList.toggle('menuh')
+    document.querySelector('span').classList.toggle('menuitens')
+    document.querySelector('strong').style.position = 'relative'
+    var titulo = document.createElement('h1');
+    
+}
 
 
 

@@ -1,6 +1,18 @@
 body { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; /*background-image: url(/windows10.png);*/ }
 
-body img { width: 18px; height: 11px; -webkit-box-pack: left; -ms-flex-pack: left; justify-content: left; margin-left: 4%; margin-top: 5%; }
+body img { width: 18px; height: 11px; -webkit-box-pack: left; -ms-flex-pack: left; justify-content: left; margin-left: 4%; margin-top: 5%; cursor: pointer; }
+
+body .menuimg { position: relative; z-index: 999; }
+
+body .menuitens { display: none; }
+
+body .menuitenslista { margin: 0; position: relative; top: 4%; }
+
+body .menuh { position: absolute; z-index: 10; width: 310px; height: 450px; top: 8%; background-color: #d6dae0; }
+
+body .menuh ul { -webkit-box-sizing: content-box; box-sizing: content-box; }
+
+body .menuh ul:hover { background-color: #0d45a5; cursor: pointer; }
 
 body #janela { width: 45px; height: 29.5px; font-size: 13pt; margin: 0; padding: 0; border: none; position: relative; right: 60px; }
 

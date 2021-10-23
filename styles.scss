@@ -7,6 +7,40 @@ img{
     justify-content: left;
     margin-left: 4%;
     margin-top: 5%;
+    cursor: pointer;
+}
+.menuimg{
+    position: relative;
+    z-index: 999;
+}
+.menuitens{
+   display: none;
+}
+.menuitenslista{
+    margin: 0;
+    
+    position: relative;
+    
+    top: 4%
+    
+ }
+ 
+ 
+.menuh{
+    position: absolute;
+    z-index: 10;
+    width:310px;
+    
+    height: 450px;
+    top: 8%;
+    background-color: #d6dae0;
+    ul{
+        box-sizing: content-box
+    }
+    ul:hover{
+        background-color: #0d45a5;
+        cursor: pointer;
+    }
 }
 #janela{
     width: 45px;
